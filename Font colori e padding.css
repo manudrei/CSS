@@ -1,0 +1,24 @@
+body {
+    font-family: Helvetica, Arial, sans-serif; /* font-family permette di scegliere il font */
+    color: #665544; /* colore font*/
+    padding: 22px;}
+h1, h2, p {
+    padding: 12px;
+    line-height: 2em;}
+i, a, a:hover, a:visited {
+    color: #665544;}
+
+body {
+        font-family: arial;
+        background-color: rgb(185,179,175);} /*colore sfondo*/
+h1 {
+        color: rgb(255,255,255);}
+
+body {
+font-family: Arial, Verdana, sans-serif;
+color: #665544;
+padding: 10px;}
+.page {
+border: 1px solid #665544;
+background-color: #efefef;
+padding: inherit;} /*Attributo usato per diversi CSS, indica che prende la proprietà dell'elemento padre*/
