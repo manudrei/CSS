@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Opacity</title>
+		<style type="text/css">
+			div {
+				width: 100px;
+				height: 100px;
+				margin: 40px; /*crea spazio tra gli elementi, il margin è lo spazio attorno all'elemento. Il padding è lo spazio dell'elemento stesso*/
+				display: inline-block; /* vale a dire che l'elemento viene allineato rispetto alla propria interlinea, 
+                così come effettivamente dovrebbe essere, nonostante gli elementi abbiano una altezza differente*/
+				background-color: #ee3e80;}
+			p {
+				width: 100px;
+				height: 100px;
+				position: relative; /*POSIZIONI:
+                STATIC è la classica
+                RELATIVE l'elemento viene posizionato in base al flusso normale del documento, quindi sfalsato rispetto a se stesso in base ai valori di top, right, bottom, e left
+                ABSOLUTE L'elemento viene rimosso dal normale flusso di documenti e non viene creato spazio per l'elemento nel layout di pagina. 
+                È posizionato rispetto al suo antenato posizionato più vicino, se presente; 
+                in caso contrario, viene posizionato rispetto al blocco contenitore iniziale . La sua posizione finale è determinata dai valori di top, right, bottom, e left.
+                STICKY l'elemento scorre quando si scorre nella pagina
+
+				top: 20px;
+				left: 20px;
+				margin: 20px;}
+			p.one {
+				background-color: rgb(0,0,0);
+				opacity: 0.5;}
+			p.two {
+				background-color: rgb(0,0,0);
+				background-color: rgba(0,0,0,0.5);}
+		</style>
+	</head>
+	<body>
+		<div><p class="one"></p></div>
+		<div><p class="two"></p></div>
+	</body>
+</html>
