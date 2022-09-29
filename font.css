@@ -1,0 +1,7 @@
+body{
+    font-family: Helvetica; /* dichiarazione per il tipo di font */
+    font-weight: bold; /*Dichiarazione per rendere il testo in grassetto */
+    font-size: 10px;    /* Dichiarazione per ridimensionare il testo, posso usare sia i pixel sia le percentuali */
+    font-style: italic; /*Rende il testo in corsivo */
+}
+
