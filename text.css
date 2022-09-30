@@ -1,0 +1,7 @@
+body :first-letter ::first-line{ /*first letter e first line vengono chiamati pseudo elemnts, si metto di seguito alle classi e in questo caso vuol dire che la regola css funzionerà solo nella prima lettera o nella prima riga */
+text-align: center; /* Istruzione per centrare il testo, può essere center, left , right, justify */
+vertical-align: text-top; /* Istruzione per posizionare lo schermo, può essere top, bottom, baseline, text-top, text-bottom */
+
+
+
+}

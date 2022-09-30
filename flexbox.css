@@ -1,0 +1,66 @@
+.container {
+    display: flex; /* or inline-flex definisce una flexbox*/
+
+  }
+  
+  .container {
+    flex-direction: row | row-reverse | column | column-reverse; /*Cambia il verso dei flex items */
+  }
+
+  .container {
+    flex-wrap: nowrap | wrap | wrap-reverse; /*Di defualt tutti gli item stanno su unica riga, flex-wrap li manda a capo. No wrap è quello di default cioè stanno tutti sulla stessa riga; wrap e wrap reverse manda a capo cambia solo il verso; */
+  }
+
+  .container {
+    flex-flow: column wrap; /*é uno shortcut che ingloba sia flex direction sia wrap  */
+  }
+
+  .container {
+    justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe; /* Controlla lo spazio dell'asse principale, può spostare gli elementi orizzontalmente alla Y. Riporto:
+    flex-start (default): items are packed toward the start of the flex-direction.
+    flex-end: items are packed toward the end of the flex-direction. Li porta in fondo alla box
+    start: items are packed toward the start of the writing-mode direction.
+    end: items are packed toward the end of the writing-mode direction.
+    left: items are packed toward left edge of the container, unless that doesn’t make sense with the flex-direction, then it behaves like start.
+    right: items are packed toward right edge of the container, unless that doesn’t make sense with the flex-direction, then it behaves like start.
+    center: items are centered along the line
+    space-between: items are evenly distributed in the line; first item is on the start line, last item on the end line
+    space-around: items are evenly distributed in the line with equal space around them. Note that visually the spaces aren’t equal, since all the items have equal space on both sides. The first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that applies.
+    space-evenly: items are distributed so that the spacing between any two items (and the space to the edges) is equal. */
+
+    .container {
+        align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe; /*Sposta gli elementi verticalmente rispetto all'asse X Riporto:
+        stretch (default): stretch to fill the container (still respect min-width/max-width)
+        flex-start / start / self-start: items are placed at the start of the cross axis. The difference between these is subtle, and is about respecting the flex-direction rules or the writing-mode rules.
+        flex-end / end / self-end: items are placed at the end of the cross axis. The difference again is subtle and is about respecting flex-direction rules vs. writing-mode rules.
+        center: items are centered in the cross-axis
+        baseline: items are aligned such as their baselines align */
+      }
+    .container {
+        align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe; 
+        /*Via di mezzo tra align items e content, fa sia verticale che orizzontale*/
+      }
+      .container {
+        display: flex;
+        ...
+        gap: 10px; /*Crea spazio tra i vari elementi della flexbox;*/
+        gap: 10px 20px; /* row-gap column gap */
+        row-gap: 10px;
+        column-gap: 20px;
+      }
+
+      .item {
+        order: 5; /* default is 0 cambia il verso del singolo item*/
+      }
+
+      .item {
+        flex-grow: 4; /* default 0 aumenta lo spazio di un item, diciamo che questa funzione si mangia lo spazio vuoto tra gli item */
+      }
+      
+      .item {
+        flex-shrink: 3; /* default 1 uguale a grow ma si restringe*/
+      }
+      .item {
+        align-self: auto | flex-start | flex-end | center | baseline | stretch; /*Align per il singolo item*/
+      }
+  }

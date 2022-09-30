@@ -1,0 +1,22 @@
+body{
+width: 50px;
+height:50px;
+min-width: auto;
+max-width: 0%;
+min-height: auto;
+max-height: 0%; /*Le box posso impostare i valori di larghezza e altezza, ma soprattutto i limiti min e max in altezza e larghezza così da poterli adatattare nei vari dispostivi; */
+overflow: hidden;
+overflow: scroll; /*Il contenuto che non sta dentro alla box, in pratica o viene nascosto come nel caso hidden oppure con scroll è possibile muovi con la rotella del mouse dentro alla box */
+border-width: 2px; /*CSS per aumentare lo spessore del bordo, posso usare thin, medium e thick oppure esprimerlo in pixel, posso modificare anche un lato alla volta usando border-top-width oppure border-bottom-width e così via */
+border-style:solid; /*CSS per lo stile del bordo. Può essere: solid, dotted, dashed, double,... */
+border-color: aliceblue;
+border: 1px solid blue; /*CSS unico per i bordi, dopo i due punti metto tutte le caratteristiche del bordo tipo colore, spessore e stile */
+padding: 10px; /*Aumenta lo spazio tra il bordo e l'elemento. Posso usare padding-top, padding-left,..*/
+margin:10px; /* Controlla lo spazio tra due box o più box. Posso usare anche qui top, left, right,.. */
+margin: 10 auto 10 auto; /* top, right, bottom, left è uno shortcut al posto di usare padding-left,... mettendo auto nel right e left centro la box al centro pagina */
+visibility: hidden; /*Può essere hidden o visible,  nasconde o rende visibile l'elemento; */
+border-image: url() stretch round repeat; /*All'interno della parentesi si mette il percorso dell'immagine, streatch ridimensiona l'immagine, repeat la ripete e round la ripete ma scala l'immagine nel caso non ci stasse nel bordo */
+box-shadow: 0 0 10px green; /*Ombra dietro la box, il prima valore è l'offeset orizzontale, il secondo il verticale, il terzo è l'opacità e il quarto il colore */
+border-radius: 5px; /*Angoli arrotondati, posso usare 4 valori al posto che uno così posso indicare i quattro angoli separatamente */
+
+}

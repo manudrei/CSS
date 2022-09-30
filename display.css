@@ -1,5 +1,6 @@
 body{
     display: block;    /*Ogni elemento che usa questo CSS va in una nuova riga (a capo) */
     display: inline;    /*Ogni elemento che usa questo CSS li inserisce nella stessa riga ovviamente va a capo se finisce il padding del block */
-    display:inline-block; /* Mette ogni singolo elemento nella stessa riga ma con grandezza aggiustabile */
+    display: inline-block; /* Mette ogni singolo elemento nella stessa riga ma con larghezza aggiustabile */
+    display: none; /*Nasconde l'elemento */
 }
