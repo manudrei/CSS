@@ -1,0 +1,4 @@
+body{
+    display: block;    /*Ogni elemento che usa questo CSS va in una nuova riga (a capo) */
+    display: inline;    /*Ogni elemento che usa questo CSS li inserisce nella stessa riga */
+}
