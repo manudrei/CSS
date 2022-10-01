@@ -63,4 +63,10 @@
       .item {
         align-self: auto | flex-start | flex-end | center | baseline | stretch; /*Align per il singolo item*/
       }
+      .item{
+        flex-basis: auto; /*Permette di impostare la grandezza iniziale dell'item */
+        flex: 0 1 auto; /*è uno shortcut, in questo ordine sono grow, shrink e basis */
+      }
   }
+
+

@@ -1,0 +1,6 @@
+p{
+position: relative;
+top: 0px; /*Sposta l'elemento in qualsiasi direzione  */
+position: absolute; /*Uguale a relative ma viene giù quando scrolli con il mouse */
+
+}

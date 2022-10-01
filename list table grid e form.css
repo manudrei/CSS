@@ -1,0 +1,13 @@
+ol {
+
+    list-style-type: decimal; /*Cambia i numeri nella lista*/
+    list-style-image: url();
+    list-style-position: outside;
+    list-style: circle; /*Sono funzioni per cambiare il pallino o il numero della lista*/
+}
+table{
+/*valgono tutti i css del testo idem per i form*/
+empty-cells: hide;
+border-spacing: 5px 5px;
+border-collapse: collapse;
+}
