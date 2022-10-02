@@ -11,3 +11,9 @@ empty-cells: hide;
 border-spacing: 5px 5px;
 border-collapse: collapse;
 }
+
+.grid{
+grid-template-columns: 40px 60px; /*Definisce le colonne del grid, in questo esempio crea due colonne */
+
+
+}
