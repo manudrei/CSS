@@ -13,7 +13,11 @@ border-collapse: collapse;
 }
 
 .grid{
-grid-template-columns: 40px 60px; /*Definisce le colonne del grid, in questo esempio crea due colonne */
-
-
+grid-template-columns: 40px 60px; /*Definisce le colonne del grid, in questo esempio crea due colonne, posso usare anche l'unità di misura fr che appunto sta per frazione */
+grid-template-rows: 40px 60px; /*Definisce le righe del grid*/
+grid-template-columns: repeat(3, auto); /*La funzione repeat si può usare sia per le colonne sia per le righe, in questo caso fa tre colonne di grandezza auto */
+grid-template: 10px 10px / 5px 5px; /*Fa un grid 2x2 con righe da 10px e colonne da 5px */
+column-gap: 5px;
+row-gap: 5px;
+gap:10px 5px; /* Aumenta il gap tra gli elementi, il primo indica le righe il secondo le colonne, se metto solo un valore applicherà quel valore sia alla righe sia alle colonne */
 }
