@@ -1,0 +1,31 @@
+
+   <!doctype html>
+<html>
+ <head>
+    <style>.item-1 {
+        grid-area: item1;
+       }
+       
+       .item-2 {
+        grid-area: item2;
+       }
+       
+       .item-3 {
+        grid-area: item3;
+       }
+        .area{
+         grid-template-areas: "item1 item2 item3"; /*Crea un template un grid template */
+        justify-items: start;/*Allinea gli elementi a sinistra, i valori sono i soliti: stretch, end, start e center */
+        align-items: end; /*Sposta gli elementi in basso nel grid*/
+      }
+      
+   </style>
+ </head>
+ <body>
+  <div class="grid-container">
+   <div class="grid-item item-1">Area 1</div>
+   <div class="grid-item item-2">Area 2</div>
+   <div class="grid-item item-3">Area 3</div>
+  </div>
+ </body>
+</html>

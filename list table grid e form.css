@@ -20,4 +20,6 @@ grid-template: 10px 10px / 5px 5px; /*Fa un grid 2x2 con righe da 10px e colonne
 column-gap: 5px;
 row-gap: 5px;
 gap:10px 5px; /* Aumenta il gap tra gli elementi, il primo indica le righe il secondo le colonne, se metto solo un valore applicherà quel valore sia alla righe sia alle colonne */
+grid-column: span 2 ;
+grid-row: span 3; /* Permette di aumentare le dimensioni della colonna o riga in base alla funzione che uso, in pratica span 2 ingloba due colonne o due righe */
 }
