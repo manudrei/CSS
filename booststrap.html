@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> <!--Boostrap è una libreria da usare-->
+  </head>
+  <body>
+     <!--ESEMPIO CONTAINER-->
+    <div class="container"> <!--Class container per trasformare da div a container, l'istruzione container-fluid trasforma un containter in tutto schermo-->
+     <div class="row">
+      <div class="col"> This item is in the container </div>
+     </div>
+    </div>
+   <!--ESEMPIO NAV-->
+    <nav class="navbar navbar-expand-md bg-light"> <!--Nel nav ci sono sempre i menù, in questo caso è fatto con i un ul, navbar-expand-md permette di fare un menù responsive sia su
+    mobile sia su desktop, la class navbar trasforma il nav in una navbar-->
+        <img class="navbar-brand" 
+         src="https://mimo.app/i/tonys-pizza-logo.png" /> <!--navbar-brand permette di aggiungere un immagine al menù-->
+        <ul class="navbar-nav"> <!--Navbar-nav trasforma una ul in un menù-->
+         <li>
+          <a class="nav-link" href="#">Home</a> <!--nav-link permette di creare un link nel menù -->
+         </li>
+         <li>
+          <a class="nav-link" href="#">Services</a>
+         </li>
+        </ul>
+       </nav>
+        <!--ESEMPIO PROPRIETA CONTAINER-->
+        <div class="container-fluid"> 
+            <div class="row"> <!--element into a container for column-->
+             <div class="col-6">Column 1</div> <!--Column 1 è unica colonna composta da 6 colonne-->
+             <div class="col-5  offset-1">Column 2</div> <!--offset-1 lascia una colonna vuota -->
+             </div>
+             <p class="lead">The South Pole, also known as the Geographic <!--Lead fa il testo più grande-->
+                South Pole or Terrestrial South Pole, is one of the two points
+                where Earth's axis of rotation intersects its surface.</p>
+               <p class="text-uppercase bg-primary"> It is the southernmost point on the surface of Earth and lies <!--Fa il testo in maiuscolo per uppercase e 
+                bg-primary fa lo sfondo blu sotto al testo, text-lowercase farebbe il testo tutto in minuscolo-->
+                on the opposite side of Earth from the North Pole. </p>
+                <p class="lead text-primary">The South Pole, also known as the <!--Text-primary fa il testo blu, text-success lo fa verde, 
+                    text-colore fa il testo del colore che vogliamo-->
+                    Geographic South Pole or Terrestrial South Pole, is one of the
+                    two points where Earth's axis of rotation intersects its
+                    surface.</p>
+                    <button type="button" class="btn btn-dark btn-lg">Submit Application</button> <!--Fa un bottone nero, btn-lg lo allarga 
+                        btn è la classe predefinita per i bottoni bootstrap
+                        btn-success lo fa di un certo colore quando cliccato
+                        btn-danger lo fa rosso
+                        btn-sm lo fa più piccolo-->
+   </body>
+   </html>
